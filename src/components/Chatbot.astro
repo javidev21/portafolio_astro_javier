@@ -1,0 +1,23 @@
+---
+---
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Javibot"
+  agent-id="4d327302-4481-4ca8-9386-24309d68969e"
+  language-code="es"
+></df-messenger>
+
+<style>
+  df-messenger {
+    --df-messenger-bot-message: #003159;
+    --df-messenger-button-titlebar-color: #000;
+    --df-messenger-chat-background-color: #f4f4f4;
+    --df-messenger-font-color: #fff;
+    --df-messenger-user-message: #1e40af;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+  }
+</style>

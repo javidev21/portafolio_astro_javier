@@ -4,17 +4,27 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import HTML from "./icons/HTML.astro"
+import CSS from "./icons/CSS.astro"
+import Javascript from "./icons/Javascript.astro"
+import Chatbot from "./Chatbot.astro"
 
+//Mmodificar esta parte fue la que más me llevó tiempo.
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
+  HTML: {
+    name: "HTML",
     class: "bg-black text-white",
-    icon: NextJS,
+    icon: HTML,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
+  CSS: {
+    name: "CSS",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: CSS,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-yellow-500 text-black",
+    icon: Javascript,
   },
 }
 const PROJECTS = [
@@ -24,16 +34,17 @@ const PROJECTS = [
       "Página empresarial de una ferretería del norte de México.",
     link: "https://pagina-matsalas1.onrender.com/",
     github: "https://github.com/javidev21/pagina_matsalas",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    image: "/projects/matsalas.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Prototipo Inmobiliaria",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Desarrollamos un sitio prototipo de una inmobiliaria para posibles clientes.",
+    link: "https://nexum-4fk4.onrender.com/",
+    github: "https://github.com/csoto909/nexum/",
+    image: "/projects/inmobi.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
 ]
 ---
@@ -44,7 +55,11 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img 
+      alt={title}
+      class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" 
+      loading="lazy" 
+      src={image} />
     </div>
   </div>
 
@@ -88,6 +103,7 @@ const PROJECTS = [
     ))
   }
 </div>
+<Chatbot />
 
 
 
