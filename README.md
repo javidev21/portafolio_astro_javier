@@ -23,6 +23,6 @@ Este proyecto fue desarrollado usando Astro.
 - Email: ingjaviersalas@gmail.com
 - [🔗 Mi perfil de LinkedIn](https://www.linkedin.com/in/javier-salas-dev/)  
 - [🌐 Visita mi sitio web](https://javiersalas.dev)
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Javier%20Salas-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/javier-salas-dev/)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Javier%20Salas-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/javiersalasdev/)
 
 <p></p>
